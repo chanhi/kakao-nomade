@@ -1,3 +1,3 @@
 # kakao-nomade
 
- this is checking text
+ this is Nomade Kakao clone class
