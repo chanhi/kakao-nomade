@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.header .header_title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.header .header_icon{
+    font-size: 20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header .header_header-coulumn {
+    display: flex;
+    align-items: center;
+}
+
+.header .header_back-btn {
+    font-size: 22px;
+    margin-right: 20px;
+}
