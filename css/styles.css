@@ -2,6 +2,7 @@
 @import "reset.css";
 @import "status-bar.css";
 @import "header.css";
+@import "nav-bar.css";
 
 body {
     background-color: white;
@@ -12,4 +13,8 @@ body {
 
 a {
     color: inherit;
+}
+
+* {
+    box-sizing: border-box;
 }
