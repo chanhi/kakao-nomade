@@ -3,6 +3,7 @@
 @import "status-bar.css";
 @import "header.css";
 @import "nav-bar.css";
+@import "friend.css";
 
 body {
     background-color: white;
@@ -13,6 +14,7 @@ body {
 
 a {
     color: inherit;
+    text-decoration: none;
 }
 
 * {
