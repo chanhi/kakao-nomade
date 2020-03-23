@@ -45,3 +45,27 @@
 .friend_content .friend_status {
     font-size: 12px;
 }
+
+.friend .friend_now-listening {
+    border: 2px solid #52e064;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.friend_now-listening span {
+    opacity: 0.6;
+}
+
+.friend_now-listening i {
+    font-size: 12px;
+}
+
+.friend_add-btn {
+    display: flex;
+    padding: 10px 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
