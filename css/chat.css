@@ -23,6 +23,10 @@
     padding-top: 100px;
 }
 
+.chats_list {
+    margin-bottom: 20px;
+}
+
 .chat-screen {
     background-image: url("../images/pixel-heart.png");
     min-height: 500vh;
