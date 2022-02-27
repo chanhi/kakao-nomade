@@ -39,3 +39,13 @@
 
 
 #CSS
+
+#Git, Github
+```
+git status
+git add modifiedFile
+...
+git status
+git commit -m "commit comment"
+git push
+```
