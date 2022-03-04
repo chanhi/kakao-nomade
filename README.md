@@ -69,6 +69,20 @@ h1 {
 ```
 *위와 같은 방식으로 태그, class, id를 지정하여 style을 변경한다.
 
+#### block: 대부분의 tag들이 가지는 속성, 해당 tag가 있는 영역에 다른 객체가 못 옴
+-content -> padding -> border -> margin
+-collapsing margins: 두 content가 위, 아래에서 경계가 같아지면 서로 margin이 같아짐
+#### inline: span, link 등의 tag가 가지는 속성, tag의 콘텐츠가 가지는 영역만 있음
+-height, width를 가질 수가 없음
+
+```
+* {
+ display: block
+ display: inline
+}
+```
+해당 tag의 속성을 변경
+
 #Git, Github
 ```
 git status
