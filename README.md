@@ -66,6 +66,9 @@ h1 {
 #id {
  text-align: center;
 }
+* {
+ background-color: red;
+}
 ```
 *위와 같은 방식으로 태그, class, id를 지정하여 style을 변경한다.
 
@@ -79,9 +82,45 @@ h1 {
 * {
  display: block
  display: inline
+ display: inline-block
 }
 ```
-해당 tag의 속성을 변경
+-해당 tag의 속성을 변경    
+-block의 경우 혼자만 공간을 차지    
+-inline의 경우 padding은 상하좌우 모두 가질 수 있지만, margin의 경우 상하는 가질 수 없다.(height와 width가 없음)    
+-inline-block의 경우 inline 처럼 옆에 컨텐츠가 오지만 height와 width를 가질 수 있다.    
+-inline-block의 단점    
+ 1. 생성하지 않은 빈 공간이 생김    
+ 2. 빈 공간에 대한 정해진 규칙이 없음     
+ 3. 반응형 디자인을 지원하지 않기 때문에 잘 사용하지 않음    
+
+```
+div {
+ border: 1px solid red;
+}
+```
+div 태그의 모든 box 경계선에 1px 크기의 빨간 선이 생긴다.
+
+#### display
+
+```css
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ display-direction: column-reverse;
+ display-wrap: wrap;
+}
+```
+
+3가지 규칙
+1. 자식 element를 움직이기 위해서는 오로지 부모 element에게 명시한다.
+2. main axis(주축): justify-content를 통해 조절(수평)
+3. cross axis(교차축): align-items를 통해 조절(수직)
+
+-display를 flex로 했을 때 default는 row(수평)이다    
+-display-direction: column 으로 작성하면 주축이 수직이 되고 교차축이 수평이 된다
+-reverse로 설정할 경우 순서가 뒤집힘
 
 #Git, Github
 ```
