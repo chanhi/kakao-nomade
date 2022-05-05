@@ -173,10 +173,10 @@ p ~ span {
 - p 바로 다음 형제 span
 - p 다음 형제 중 span
 
-input:required -> input중에 required 속성을 가진 태그
-input:[placeholder~="name"] -> input 중에 palceholder이 name이 들어간 태그
-input::placeholder -> placeholder 변경
-p::selection -> 선택된 parse 변경
+input:required -> input중에 required 속성을 가진 태그    
+input:[placeholder~="name"] -> input 중에 palceholder이 name이 들어간 태그     
+input::placeholder -> placeholder 변경    
+p::selection -> 선택된 parse 변경    
 
 ### Variables
 ```css
@@ -196,7 +196,7 @@ input:focus
 a:visited
 form:focus-within - 자식들 중에 focused 된것이 있으면 실행
 
-#Git, Github
+# Git, Github
 ```
 git status
 git add modifiedFile
