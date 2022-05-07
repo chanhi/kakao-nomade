@@ -190,10 +190,10 @@ a {
 document의 root에 변수를 저장해서 var()을 이용해서 사용
 
 #### states
-button:active
-button:hover
-input:focus
-a:visited
+button:active    
+button:hover    
+input:focus    
+a:visited    
 form:focus-within - 자식들 중에 focused 된것이 있으면 실행
 
 ### Transitions    
