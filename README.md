@@ -196,6 +196,75 @@ input:focus
 a:visited
 form:focus-within - 자식들 중에 focused 된것이 있으면 실행
 
+### Transitions    
+- 어떤 변화가 있을 때 그 변화에 대한 속도 등을 변경
+- states가 없는 쪽(변화가 일어나기 전 부분?)에 ```transition: color 5s ease-in-out```
+- states가 있는 쪽에 transition을 넣으면 해당 변화가 있을 때만 transition이 적용됨
+- 3번째 속성은 변환의 속도가 어떤 스타일로 변화될지 정함 ('mathewlein.com/tools/ceaser' -> 참고)
+- 첫번째 속성에 all을 넣으면 변화되는 모든 것에 적용됨
+
+### Transformations    
+- translate: 옮기기
+- rotate: 회전
+- scale: 크기
+*box element를 변경하는 것이 아닌 픽셀을 바꾸기 때문에 margin, padding에 영향을 미치지 않음
+
+### Animations    
+```css
+@keyframes aniName {
+ from{
+  transform: rotateX(0);
+ }
+ to{
+  transform: rotateX(360deg);
+ }
+}
+img {
+ animation: aniName 5s ease-in-out infinite;
+}
+
+@keyframes aniName2 {
+ 0% {
+  transform: rotateX(0);
+ }
+ 50% {
+  transform: rotateX(180deg) translateY(100px);
+ }
+ 100% {
+  transform: rotateX(0) translateY(0px);
+ }
+}
+img {
+ animation: aniName2 5s ease-in-out infinite;
+}
+```
+
+### Media Queries    
+- 페이지의 크기에 따라서 css를 변경함 
+
+```css
+@media screen and (max-width: 600px) {
+ div {
+  background-color: red;
+ }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+ div {
+  background-color: green;
+ }
+}
+@media screen and (min-width: 1200px) {
+ div {
+  background-color: blue;
+ }
+}
+@media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: landscape) {
+ div {
+  background-color: grey;
+ }
+}
+```
+
 # Git, Github
 ```
 git status
